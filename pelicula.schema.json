@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pelicula",
+  "description": "Esquema para el objeto Pelicula",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Identificador único de la película",
+      "readOnly": true
+    },
+    "nombre": {
+      "type": "string",
+      "description": "Nombre de la película"
+    },
+    "genero": {
+      "type": "string",
+      "description": "Género de la película"
+    },
+    "fecha": {
+      "type": "string",
+      "format": "date",
+      "description": "Fecha de lanzamiento o registro de la película (YYYY-MM-DD)"
+    },
+    "precio_alquiler": {
+      "type": "number",
+      "description": "Precio de alquiler de la película"
+    },
+    "numero_reproducciones": {
+      "type": "integer",
+      "description": "Número de veces que la película ha sido reproducida"
+    }
+  },
+  "required": [
+    "nombre",
+    "genero",
+    "fecha",
+    "precio_alquiler",
+    "numero_reproducciones"
+  ]
+}
